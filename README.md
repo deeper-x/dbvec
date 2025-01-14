@@ -32,6 +32,7 @@ func main() {
     }
 
     log.Printf("Nearest vector: %s, Distance: %f", nearest.ID, nearest.Distance)
+    // OUTPUT: Nearest vector: vec_1, Distance: 1.732051
 }
 ```
 

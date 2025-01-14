@@ -93,7 +93,10 @@ func main() {
 	db.Add(Vector{ID: "vec_3", Values: []float64{7.0, 8.0, 9.0}})
 
 	query := []float64{2.0, 3.0, 4.0}
-	nearest, dist := db.FindNearest(query)
+	nearest, err := db.FindNearest(query)
+	if err != nil {
+		log.Fatal(err)
+	}
 
-	log.Println(nearest, dist)
+	log.Printf("Nearest vector: %s, Distance: %f", nearest.ID, nearest.Distance)
 }
