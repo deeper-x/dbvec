@@ -1,5 +1,7 @@
 # VectorDB
 
+[![Go](https://github.com/deeper-x/dbvec/actions/workflows/go.yml/badge.svg)](https://github.com/deeper-x/dbvec/actions/workflows/go.yml)
+
 VectorDB is a simple in-memory database for storing vectors and finding the nearest vector to a query vector using Euclidean distance.
 
 ## Installation
